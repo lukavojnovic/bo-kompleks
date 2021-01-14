@@ -1,0 +1,145 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+.active {
+    display: block;
+}
+.bo-dark {
+    background-color: #3d3d3d;
+}
+.bo-nav-link {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+}
+.bo-nav-link:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    background: #eb6767;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.bo-nav-link:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.bo-footer {
+    background-color: #2b2a2a;
+}
+.bo-mt-30vh {
+    margin-top: 30vh;
+}
+.bo-ml-30vw {
+    margin-left: 20vw;
+}
+.bo-red-color {
+    color: #eb6767;
+}
+
+.bo-bg-red {
+    background-color: #eb6767;
+}
+.bo-bg-red:hover {
+    background-color: #ff8d8d;
+}
+
+/* #project{
+    background-image: url("../src/images/bg.jpg");
+} */
+
+.h-60-screen {
+    height: 60vh;
+}
+
+.bo-h-300px {
+    height: 300px !important;
+}
+
+.bo-top-50 {
+    top: 13px;
+}
+.bo-pt-nav {
+    padding-top: 100px;
+}
+
+.bo-h-14 {
+    height: 3.5rem;
+}
+
+.bo-w-14 {
+    width: 3.5rem;
+}
+
+.bo-cb-is-active {
+    background-color: #eb6767;
+}
+
+footer {
+    background-color: #eb6767;
+}
+
+#iframe {
+    min-height: 300px;
+    max-height: 750px;
+}
+
+#home {
+    background-image: url("../images/bb.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#project {
+    background-image: url("../images/zagreb.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.rotate-img {
+    transition-duration: 0.5s;
+    transition-property: transform;
+    transform: rotate(180deg);
+}
+.rotate-img-again {
+    transition-duration: 0.5s;
+    transition-property: transform;
+    transform: rotate(180deg);
+}
+.Collapsible__trigger {
+    &:after {
+        font-family: "FontAwesome";
+        content: "\f107";
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        display: block;
+        transition: transform 300ms;
+    }
+
+    &.is-open {
+        &:after {
+            transform: rotateZ(180deg);
+        }
+    }
+
+    &.is-disabled {
+        opacity: 0.5;
+        background-color: grey;
+    }
+}
+
+/* .rotate-img-hover{
+    transform: rotate(180deg);
+} */
