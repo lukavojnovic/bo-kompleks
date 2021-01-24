@@ -52,20 +52,20 @@ const Navbar = () => {
 
                     {localStorage.getItem("user") && <>
                         <button onClick={() => history.push("/admin")}
-                                className="block mt-4 lg:inline-block lg:mt-0 mr-4 px-3 py-1 ml-auto bg-white text-black rounded-sm">
+                                className="block mt-4 lg:inline-block lg:mt-0 mr-4 px-3 py-1 ml-auto bg-white hover:bg-gray-300 text-black rounded-lg">
                             Administracija
                         </button>
-                        <button
+                        {/* <button
                             className="block mt-4 lg:inline-block lg:mt-0 mr-4 px-3 py-1 ml-auto bg-white text-black rounded-sm">
                             {localStorage.getItem("user") ? JSON.parse(localStorage.getItem("user")).username : ""}
-                        </button>
+                        </button> */}
                         <button
                             onClick={() => {
                                 localStorage.removeItem("user")
                                 window.location.reload();
                             }
                             }
-                            className="block mt-4 lg:inline-block lg:mt-0 mr-4 px-3 py-1 ml-auto bg-white text-black rounded-sm">
+                            className="block mt-4 lg:inline-block lg:mt-0 mr-4 px-3 py-1 ml-auto bg-white hover:bg-gray-300 text-black rounded-lg">
                             Odjavi se
                         </button>
                     </>
@@ -93,6 +93,26 @@ const Navbar = () => {
                     <a href="#contact" className=" mt-6 text-white hover:text-gray-300 mr-auto py-3 bo-nav-link">
                         Kontakt
                     </a>
+                    {localStorage.getItem("user") && <>
+                        <button onClick={() => history.push("/admin")}
+                                className="block mt-4 lg:inline-block lg:mt-0 px-3 py-1 mr-auto bg-white text-black hover:bg-gray-300 rounded-lg">
+                            Administracija
+                        </button>
+                        {/* <button
+                            className="block mt-4 lg:inline-block lg:mt-0 mr-4 px-3 py-1 ml-auto bg-white text-black rounded-sm">
+                            {localStorage.getItem("user") ? JSON.parse(localStorage.getItem("user")).username : ""}
+                        </button> */}
+                        <button
+                            onClick={() => {
+                                localStorage.removeItem("user")
+                                window.location.reload();
+                            }
+                            }
+                            className="block mt-4 lg:inline-block lg:mt-0 mr-auto px-3 py-1  bg-white text-black hover:bg-gray-300 rounded-lg">
+                            Odjavi se
+                        </button>
+                    </>
+                    }
                 </div>
             </div>
             <div className="lg:hidden absolute bo-top-50 right-0 mr-2">

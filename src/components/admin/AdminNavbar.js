@@ -8,7 +8,7 @@ const AdminNavbar = () => {
                 <div className="max-w-7xl mx-auto px-8">
                     <div className="flex items-center justify-between h-16">
                         <div className=" flex items-center">
-                            <a className="flex-shrink-0" href="/admin">
+                            <a className="flex-shrink-0" href="/">
                                 <img className="h-8 w-8" src={logo} alt="Workflow" />
                             </a>
                             <div className="block">

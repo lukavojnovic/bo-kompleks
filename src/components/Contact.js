@@ -102,7 +102,8 @@ function Contact() {
                 <Fade bottom>
                     <div className="invisible lg:visible hidden lg:block">
                         <p className="text-center text-3xl font-semibold pt-16 mb-4">Imate li pitanje?</p>
-                        <p className="text-center text-xl font-semibold pt-16 mb-4">kontaktirajte nas putem E-maila</p>
+                        <p className="text-center text-xl font-semibold pt-16 mb-4">kontaktirajte nas putem E-maila - <span className="bo-red-color font-semibold">info@bo.com.hr</span></p>
+                        <p className="text-center text-xl font-semibold mb-4">ili ispunite kontakt formu</p>
                     </div>
                 </Fade>
             </div>

@@ -48,6 +48,14 @@ body {
     color: #eb6767;
 }
 
+.bo-bg-lightred {
+    background-color: #f58c8c;
+}
+
+.bo-bg-lightred:hover {
+    background-color: #fd9c9c;
+}
+
 .bo-bg-red {
     background-color: #eb6767;
 }
@@ -95,11 +103,11 @@ footer {
     max-height: 750px;
 }
 
-#home {
-    background-image: url("../images/bb.jpg");
-    background-position: center;
-    background-size: cover;
-}
+// #home {
+//     background-image: url("../images/bb.jpg");
+//     background-position: center;
+//     background-size: cover;
+// }
 
 #project {
     background-image: url("../images/zagreb.jpg");
@@ -107,39 +115,55 @@ footer {
     background-size: cover;
 }
 
-.rotate-img {
-    transition-duration: 0.5s;
-    transition-property: transform;
-    transform: rotate(180deg);
-}
-.rotate-img-again {
-    transition-duration: 0.5s;
-    transition-property: transform;
-    transform: rotate(180deg);
-}
-.Collapsible__trigger {
+.plus-minus {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    &:before,
     &:after {
-        font-family: "FontAwesome";
-        content: "\f107";
+        content: "";
         position: absolute;
-        right: 10px;
-        top: 10px;
-        display: block;
-        transition: transform 300ms;
+        background-color: black;
+        border-radius: 2px;
+        transition: transform 0.35s ease-out;
     }
+    /* Vertical line */
+    &:before {
+        top: 0;
+        left: 50%;
+        width: 4px;
+        height: 100%;
+        margin-left: -2px;
+    }
+    /* horizontal line */
+    &:after {
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        margin-top: -2px;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
 
+.plus-minus.clicked {
+    &:before {
+        transform: rotate(90deg);
+    }
+    &:after {
+        transform: rotate(180deg);
+    }
+}
+
+.Collapsible__trigger {
     &.is-open {
-        &:after {
-            transform: rotateZ(180deg);
+        .plus-minus:before {
+            transform: rotate(90deg);
+        }
+        .plus-minus:after {
+            transform: rotate(180deg);
         }
     }
-
-    &.is-disabled {
-        opacity: 0.5;
-        background-color: grey;
-    }
 }
-
-/* .rotate-img-hover{
-    transform: rotate(180deg);
-} */
