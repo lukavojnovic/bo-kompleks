@@ -2,7 +2,7 @@ import React from 'react'
 import vector from '../icons/Vector.svg'
 import Fade from 'react-reveal/Fade';
 
-function About(props){
+const About = (props) => {
     return(
         <div className="sm:h-auto lg:h-screen bg-white bo-pt-nav" id="about">
         <Fade bottom>

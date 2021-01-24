@@ -2,7 +2,7 @@ import React from 'react'
 // import image from '../images/bb.jpg'
 import logo from '../images/bo-kompleks-logo.png'
 
-function Home() {
+const Home = () => {
 
     return (
         <div id="home" className=" w-full h-screen bg-gradient-to-r from-purple-500 to-indigo-300">

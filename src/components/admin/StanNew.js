@@ -5,7 +5,6 @@ import AdminNavbar from "./AdminNavbar"
 import { useQuery } from "react-query";
 import { KAT_MAP } from "../../constants/constant";
 import SelectComponent from "../SelectComponent"
-import SelectKatComponent from "../SelectKatComponent";
 
     // "sifra": "A5",
     // "kat": "KAT_2",

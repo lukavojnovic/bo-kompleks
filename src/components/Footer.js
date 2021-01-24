@@ -5,7 +5,7 @@ import mailIcon from '../icons/mail.svg';
 import briefcase from '../icons/briefcase.svg';
 
 
-function Footer(){
+const Footer = () => {
     return(
         <div className="w-full mx-auto h-auto bo-dark text-gray-200 pt-8 pb-8">
             <div className="flex justify-center mb-8 text-xl font-semibold">

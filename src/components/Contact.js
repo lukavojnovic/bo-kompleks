@@ -4,7 +4,7 @@ import axios from "../axios";
 import { useHistory } from "react-router";
 
 
-function Contact() {
+const Contact = () => {
 
     const history = useHistory();
 

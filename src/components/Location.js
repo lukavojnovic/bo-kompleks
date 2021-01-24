@@ -1,7 +1,7 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 
-function Location(){
+const Location = () => {
     return(
         <div className="h-auto  bg-gray-100 pt-32 pb-12" id="location">
             <Fade bottom>

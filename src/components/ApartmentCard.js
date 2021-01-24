@@ -1,7 +1,7 @@
 import React from 'react';
 import ModalImage from 'react-modal-image';
 
-function ApartmentCard(props){
+const ApartmentCard = (props) =>{
     const imgUrl = `http://bo.com.hr/img/${props.sifra}.jpg`;
     return(
         <div className="no-flex sm:flex justify-around p-4" key={props.key}>
